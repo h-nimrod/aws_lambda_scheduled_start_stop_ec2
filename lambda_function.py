@@ -24,7 +24,7 @@ ec2 = boto3.client('ec2')
 jst = MyJST.MyJST()
 
 def lambda_handler(event, context):
-    get_jst_now()
+    get_jst_now(True)
     manipulate_instances()
 
 def manipulate_instances():
@@ -221,7 +221,7 @@ def get_shutdown_holiday(instance):
 
 
 def get_jst_now(force=False):
-    return jst.get_jst_now()
+    return jst.get_jst_now(force)
 
 
 def get_hour_now():
