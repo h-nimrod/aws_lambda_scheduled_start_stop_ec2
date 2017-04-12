@@ -1,7 +1,7 @@
 preinstall
 ----------------------------------------
 
-``sh
+```sh
 pip install -t . pytz
 pip install -t . japanese_holiday
 ```
